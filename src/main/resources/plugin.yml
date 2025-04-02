@@ -1,0 +1,6 @@
+name: SlimeAcademy
+version: '${version}'
+main: me.xpyex.plugin.slimeacademy.bukkit.SlimeAcademy
+api-version: '1.20'
+softdepend: [Slimefun]
+authors: [XPYEX]
