@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -20,7 +22,14 @@ public class AcademyConfig {
     private static final File CONFIG_FILE = new File(SlimeAcademy.getInstance().getDataFolder(), "config.json");
     private static AcademyConfig current;
     private Set<String> bannedWorlds = new HashSet<>();
-    private Set<AcademySkill> bannedSkills = new HashSet<>();
+    private Set<String> bannedSkills = new HashSet<>();
+
+    public Set<AcademySkill> getBannedSkills() {
+        return bannedSkills.stream()
+                   .map(AcademySkill::getSkill)
+                   .filter(Objects::nonNull)
+                   .collect(Collectors.toSet());
+    }
 
     public static AcademyConfig load() {
         if (!CONFIG_FILE.exists()) {
@@ -39,5 +48,9 @@ public class AcademyConfig {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public enum Language {
+        zh_cn
     }
 }

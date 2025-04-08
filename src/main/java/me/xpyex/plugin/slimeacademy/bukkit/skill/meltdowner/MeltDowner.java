@@ -1,6 +1,7 @@
 package me.xpyex.plugin.slimeacademy.bukkit.skill.meltdowner;
 
 import java.util.stream.Stream;
+import me.xpyex.plugin.slimeacademy.bukkit.ability.Ability;
 import me.xpyex.plugin.slimeacademy.bukkit.skill.AcademySkill;
 import me.xpyex.plugin.slimeacademy.bukkit.util.Util;
 import org.bukkit.Material;
@@ -8,7 +9,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class MeltDowner extends AcademySkill {
+public class MeltDowner extends AcademySkill {  //粒机波形炮
+    protected MeltDowner() {
+        super(3, Ability.MeltDowner);
+    }
+
     @Override
     public void onRegister() {
 
@@ -17,11 +22,6 @@ public class MeltDowner extends AcademySkill {
     @Override
     public void onExecute(Player player) {
 
-    }
-
-    @Override
-    public int getLevel() {
-        return 0;
     }
 
     @Override

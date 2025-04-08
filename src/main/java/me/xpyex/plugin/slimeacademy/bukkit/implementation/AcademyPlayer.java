@@ -1,8 +1,8 @@
 package me.xpyex.plugin.slimeacademy.bukkit.implementation;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.UUID;
-import java.util.WeakHashMap;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 @Accessors(chain = true)
 @RequiredArgsConstructor(staticName = "of", access = AccessLevel.PRIVATE)
 public class AcademyPlayer {
-    private static final WeakHashMap<UUID, AcademyPlayer> CACHE = new WeakHashMap<>();
+    private static final HashMap<UUID, AcademyPlayer> CACHE = new HashMap<>();
     private PlayerData data = null;
     private final UUID playerUUID;
     private boolean academyEnabled = false;

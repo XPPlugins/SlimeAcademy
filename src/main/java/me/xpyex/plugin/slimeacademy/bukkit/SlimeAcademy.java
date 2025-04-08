@@ -1,15 +1,12 @@
 package me.xpyex.plugin.slimeacademy.bukkit;
 
+import lombok.Getter;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SlimeAcademy extends JavaPlugin {
+    @Getter
     private static SlimeAcademy instance;
-
-    public static SlimeAcademy getInstance() {
-        return instance;
-        //
-    }
 
     @Override
     public void onDisable() {

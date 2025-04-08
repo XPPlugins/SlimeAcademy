@@ -1,0 +1,22 @@
+{
+    "AeroHand": {
+        "name": "空气使",
+        "description": "大气也具有力量",
+        "icon_item": "minecraft:blue_dye",
+        "skills": {
+            "AirBomb": {
+                "name": "气弹",
+                "description": "发射一个气弹，对目标造成物理伤害。"
+            }
+        }
+    },
+    "ElectronMaster": {
+        "name": "电击使",
+        "description": "操作电的能力"
+    },
+    "MeltDowner": "原子崩坏",
+    "MentalOut": "心理掌握",
+    "Sight": "感官把握",
+    "Teleport": "空间传送",
+    "VectorMaster": "矢量操作"
+}
