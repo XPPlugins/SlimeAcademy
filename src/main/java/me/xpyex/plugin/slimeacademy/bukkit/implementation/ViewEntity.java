@@ -22,7 +22,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 @RequiredArgsConstructor(staticName = "of")
 public class ViewEntity {
     private final Entity entity;
-    private ViewType type = ViewType.FOCUS;
+    private ViewType type = ViewType.RELEASE;
     private final HashSet<UUID> viewers = new HashSet<>();
 
     private ViewEntity(Location loc, EntityType type) {
@@ -72,6 +72,7 @@ public class ViewEntity {
     }
 
     public ViewEntity focusEntityAtView(Player target, double distance, boolean ignoreBlock) {
+        setType(ViewType.FOCUS);
         new BukkitRunnable() {
             @Override
             public void run() {
