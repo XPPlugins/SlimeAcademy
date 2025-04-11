@@ -1,34 +1,61 @@
 {
     "AeroHand": {
         "name": "空气使",
-        "description": "大气也具有力量",
+        "description": "大气也具有力量。通过操纵空气来产生风并控制气压，制造真空环境; 在物体上设置风的喷射点并发射等",
         "icon_item": "minecraft:blue_dye",
+        "customModelData": -999,
         "skills": {
             "AirBomb": {
                 "name": "气弹",
                 "description": "发射一个气弹，对目标造成物理伤害。",
-                "icon_item": "！未定"
+                "icon_item": "！未定",
+                "customModelData": -999
             }
         }
     },
     "ElectronMaster": {
         "name": "电击使",
-        "description": "操作电的能力",
+        "description": "一种可以生成并操纵电磁现象的超能力",
         "icon_item": "minecraft:redstone",
+        "customModelData": -999,
         "skills": {
             "Electric": {
                 "name": "电击",
                 "description": "对目标造成物理伤害。",
-                "icon_item": "！未定"
+                "icon_item": "！未定",
+                "customModelData": -999
             },
             "ElectricBomb": {
                 "name": "电球",
                 "description": "发射一个电球，对目标造成物理伤害。",
-                "icon_item": "！未定"
+                "icon_item": "！未定",
+                "customModelData": -999
             }
         }
     },
-    "MeltDowner": "原子崩坏",
+    "MeltDowner": {
+        "name": "原子崩坏",
+        "description": "通过控制自由电子，使之处于波粒二象性中间的不稳定状态，借此发射电子射线作为攻击手段，也可以用来做成护盾防御",
+        "icon_item": "minecraft:slime_ball",
+        "skills": {
+            "ElectronBomb": {
+                "name": "电子光束",
+                "description": "聚集少量电子形成球形，延迟极短时间后从光球中射出光束，若击中物体将会对该物体造成破坏",
+                "icon_item": "！未定",
+                "customModelData": -999
+            },
+            "LightShield": {
+                "name": "光盾",
+                "description": "将电子团横截面扩大形成护盾，高速运动的电子将会摧毁来犯物质，并伤害任何近距离接触自己的东西",
+                "icon_item": "！未定",
+                "customModelData": -999
+            },
+            "ScatterBomb": {
+                "name": "电子弹散射",
+                "description": "操控并放射多个电子团来进行攻击。作为复数操控的代价，你无法精准地控制落点。"
+            }
+        }
+    },
     "MentalOut": "心理掌握",
     "Sight": "感官把握",
     "Teleport": "空间传送",
