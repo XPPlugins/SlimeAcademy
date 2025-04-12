@@ -1,6 +1,6 @@
-本插件致力于在BukkitAPI框架下实现《魔法禁书目录》及其衍生作品中出现的超能力
-基于Slimefun以提供电力系统，与道具获取系统
-若不安装Slimefun，您需要自行实现玩家能力的开发过程、道具的获取。
+本插件致力于在`BukkitAPI`框架下实现 **《魔法禁书目录》** 及其衍生作品中出现的超能力<p>
+基于`Slimefun`以提供电力系统，与道具获取系统<p>
+若不安装`Slimefun`，您需要自行实现玩家能力的开发过程、道具的获取。
 
 # 目前计划中的超能力:
 
@@ -16,6 +16,8 @@
 | ~~无能力者~~ | ~~...~~            | ~~NotDevelopedYet~~ | :heavy_check_mark: ~~(真的需要实现吗。。)~~ |
 
 # 使用的库:
-ProtocolLib
-Slimefun4
-EffectLib (服务端无需安装，已打包进插件)
+**ProtocolLib**
+
+**Slimefun4**
+
+**EffectLib** _(服务端无需安装，已打包进插件)_
